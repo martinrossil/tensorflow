@@ -15,7 +15,7 @@
       "@typescript-eslint/naming-convention": "off",              // so we can use first_last
       "@typescript-eslint/restrict-plus-operands": "off",         // so we can do 'page=' + 1
       "@typescript-eslint/no-unsafe-argument": "warn",
-      "@typescript-eslint/no-unsafe-assignment": "warn",
+      "@typescript-eslint/no-unsafe-assignment": "off",
       "@typescript-eslint/no-unnecessary-type-assertion": "warn",
       "capitalized-comments": "off",
       "@typescript-eslint/consistent-type-imports": "off",        // so we don't have to do import type { SomeType }

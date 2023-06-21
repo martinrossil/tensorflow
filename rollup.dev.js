@@ -6,7 +6,7 @@ import esbuild from 'rollup-plugin-esbuild';
 
 export default defineConfig({
     input: [
-        './src/TensorflowApp.ts',
+        './src/NeuralNetwork.ts',
     ],
     plugins: [
         resolve(),
