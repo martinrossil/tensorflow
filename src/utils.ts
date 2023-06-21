@@ -1,4 +1,5 @@
 import ILevel from './ILevel';
+import INeuralNetwork from './INeuralNetwork';
 
 export function randomizeLevel(level: ILevel) {
 	for (let i = 0; i < level.inputs.length; i++) {
@@ -37,4 +38,13 @@ export function feedForward(sensors: number[], level: ILevel) {
 	}
 
 	return level.outputs;
+}
+
+export function networkFeedForward(givenInputs: number[], levels: ILevel[]) {
+	let outputs = feedForward(givenInputs, levels[0]);
+	for (let i = 1; i < levels.length; i++) {
+		outputs = feedForward(outputs, levels[i]);
+	}
+
+	return outputs;
 }
